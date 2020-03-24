@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body onload="cargar()">
+
+  <!-------------------
+    $NAV
+  --------------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand p-0" href="./index.html">
+        <h1>💎 TAREAS</h1>
+      </a>
+    </div>
+  </nav>
+
+  <!-------------------
+    $MAIN
+  --------------------->
+
+  <main id="main" class="container mt-4 mb-5">
+    <div id="app" class="row">
+      <!-- form -->
+      <section class="col-md-4">
+        <div class="card">
+          <h2 class="card-header bg-primary font-small text-white text-center fz-14">📂 Crear Tarea</h2>
+
+          <form id="task-form" class="card-body">
+            <!-- name task -->
+            <div class="form-group">
+              <label class="control-label" for="task-name">Tarea</label>
+              <input id="task-name" required class="form-control" name="task-name" type="text" placeholder="Nombre de Tarea">
+            </div>
+            <!-- description -->
+            <div class="form-group">
+              <label class="control-label" for="task-description">Descripción</label>
+              <textarea id="task-description" rows="7" cols="80" required class="form-control" name="task-description"></textarea>
+            </div>
+            <!-- button -->
+            <button class="btn btn-primary btn-block">Agregar</button>
+          </form>
+
+        </div>
+      </section>
+      <!-------------------
+          $LIST
+        --------------------->
+      <section class="col-md-8">
+        <h2 class="text-center">Lista de Tareas</h2>
+        <table class="table  table-hover">
+          <thead>
+            <tr class="bg-primary  text-white">
+              <th scope="col">Tarea</th>
+              <th scope="col">Descripción</th>
+              <th scope="col"> Eliminar</th>
+            </tr>
+          </thead>
+          <tbody id="list-products">
+
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+
+  <!-------------------
+    $FOOTER
+  --------------------->
+
+  <footer class="footer  font-small bg-primary text-white">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://github.com/wilderPariona" target="_black" class="text-white"> WilderPariona 🐙 </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-------------------
+    $SCRIPTS
+  --------------------->
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
