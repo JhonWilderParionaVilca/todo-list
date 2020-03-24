@@ -1,0 +1,12 @@
+{
+  "name": "todo-list-js",
+  "version": "1.0.0",
+  "description": "APP manejador de tareas",
+  "main": "index.js",
+  "repository": "https://github.com/wilderPariona/todo-list",
+  "author": "wilderPariona <jhon.pariona.27@unsch.edu.pe>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.0.2"
+  }
+}

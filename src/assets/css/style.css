@@ -1,0 +1,15 @@
+/* posicionar footer abajo */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+footer {
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+}
+
+.fz-14 {
+  font-size: 1.4rem;
+}
